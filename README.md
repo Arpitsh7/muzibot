@@ -3,7 +3,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 Create a `.env.local` with your deployment URL so Better Auth does not default to
-`http://localhost:3000` in production (server and client use these values):
+`http://localhost:3000` in production (server and client use these values). If
+you're deploying on Vercel, `VERCEL_URL`/`NEXT_PUBLIC_VERCEL_URL` will be picked
+up automatically, but an explicit value is recommended:
 
 ```bash
 BETTER_AUTH_URL=https://your-deployment-url
