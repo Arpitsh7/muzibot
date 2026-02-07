@@ -3,8 +3,7 @@ import { useState } from "react"
 import { signUp } from "../api/lib/auth-client"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { useSession } from "../api/lib/auth-client"
-
+import { useSession } from "../api/lib/auth-client" 
 export default function Signup() {
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
@@ -35,7 +34,7 @@ export default function Signup() {
     } else {
       setSuccess(true)
       console.log("Signup Success")
-      router.push("/rider/dashboard")
+      router.push("/dashboard")
     }
   }
 
@@ -112,6 +111,11 @@ export default function Signup() {
                 {loading ? "Signing up..." : "Sign Up Now"}
               </button>
             </div>
+            <Link href="/signin">
+            <div className="flex flex-col gap-4 mt-2 text-neutral-400 font-md underline">
+              Already,Signup
+            </div>
+            </Link>
           </div>
         </form>
       </div>
