@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Stream" ADD COLUMN     "active" BOOLEAN NOT NULL DEFAULT true,
+ALTER COLUMN "bigImg" SET DEFAULT '',
+ALTER COLUMN "smallImg" SET DEFAULT '';
