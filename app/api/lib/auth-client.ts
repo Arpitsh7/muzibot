@@ -13,7 +13,8 @@ const baseURL =
   normalizeUrl(process.env.NEXT_PUBLIC_BASE_URL) ||
   normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL) ||
   normalizeUrl(process.env.NEXT_PUBLIC_BETTER_AUTH_URL) ||
-  normalizeUrl(process.env.NEXT_PUBLIC_VERCEL_URL);
+  normalizeUrl(process.env.NEXT_PUBLIC_VERCEL_URL) ||
+  (typeof window !== "undefined" ? window.location.origin : undefined);
 
 export const { signIn, signOut, signUp, useSession, getSession } =
   createAuthClient({
