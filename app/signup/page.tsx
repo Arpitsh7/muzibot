@@ -112,7 +112,7 @@ export default function Signup() {
               </button>
             </div>
             <Link href="/signin">
-            <div className="flex flex-col gap-4 mt-2 text-neutral-400 font-md underline">
+            <div className="flex flex-col gap-4  text-neutral-400 font-md underline">
               Already,Signup
             </div>
             </Link>
