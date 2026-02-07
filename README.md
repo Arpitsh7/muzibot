@@ -2,6 +2,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Create a `.env.local` with your deployment URL so Better Auth does not default to
+`http://localhost:3000` in production (server and client use these values):
+
+```bash
+BETTER_AUTH_URL=https://your-deployment-url
+NEXT_PUBLIC_APP_URL=https://your-deployment-url
+```
+
 First, run the development server:
 
 ```bash
